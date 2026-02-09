@@ -9,7 +9,16 @@ travel_costs = [[500, 150, 100, 50],[200, 300, 120, 80],
 # List to store processed expenses
 processed_expenses = []
 
+for trip in travel_costs:
+    trip_expenses = []
 
+    for cost in trip:
+        if cost <= 100:
+            trip_expenses.append("Cheap")
+        else:
+            trip_expenses.append(cost)
 
+    processed_expenses.append(trip_expenses)
+    
 # Testing
 print('Processed Travel Expenses:', processed_expenses)
