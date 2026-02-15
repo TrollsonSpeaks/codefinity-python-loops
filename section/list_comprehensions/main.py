@@ -8,7 +8,7 @@ travel_wishlist = [['Paris', 'France', 2000],['Tokyo', 'Japan', 3000],['New York
                    ['Athens', 'Greece', 1850]]
 
 # Extract trip costs using list comprehension
-trip_costs = []
+trip_costs = [trip[2] for trip in travel_wishlist]
 
 # Testing
 print('Trip Costs:', trip_costs)
